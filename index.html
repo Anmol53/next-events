@@ -1,0 +1,214 @@
+<!--Author: Anmol Agrawal-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Next Events</title>
+		<link href="style.css" rel="stylesheet">
+		<script type="text/javascript" src="date_time.js"></script>
+		<script>
+			timeLeftCalculator("May 02, 2020 14:30:00", "May 02, 2020 17:00:00", "CodeJam2020R1C");
+			timeLeftCalculator("Apr 01, 2020 12:30:00", "May 01, 2020 12:30:00", "30DayLeetcodingChallenge");
+			timeLeftCalculator("Apr 18, 2020 21:00:00", "Apr 25, 2020 21:00:00", "AprilCircuits20");
+			timeLeftCalculator("Apr 19, 2020 21:30:00", "Apr 20, 2020 00:00:00", "CodeJam2020R1B");
+			timeLeftCalculator("Apr 19, 2020 08:00:00", "Apr 19, 2020 09:30:00", "weekly-contest-185");
+			timeLeftCalculator("Apr 19, 2020 04:30:00", "Apr 19, 2020 07:30:00", "Kickstart2020B");
+			timeLeftCalculator("Apr 18, 2020 20:00:00", "Apr 18, 2020 21:30:00", "biweekly-contest-24");
+			timeLeftCalculator("Apr 03, 2020 15:00:00", "Apr 13, 2020 15:00:00", "APRIL20B");
+			timeLeftCalculator("Apr 11, 2020 06:30:00", "Apr 11, 2020 09:00:00", "CodeJam2020R1A");
+			timeLeftCalculator("Apr 05, 2020 08:00:00", "Apr 05, 2020 09:30:00", "weekly-contest-183");
+			timeLeftCalculator("Apr 04, 2020 04:30:00", "Apr 05, 2020 07:30:00", "CodeJam2020Q");
+			timeLeftCalculator("Apr 04, 2020 20:00:00", "Apr 04, 2020 21:30:00", "biweekly-contest-23");
+			timeLeftCalculator("Mar 06, 2020 15:00:00", "Mar 16, 2020 15:00:00", "MARCH20B");
+			function timeLeftCalculator(start, end, htmlId){
+				var contestStart = new Date(start).getTime();
+				var contestEnd = new Date(end).getTime();
+				var x = setInterval(function() {
+				  var now = new Date().getTime();
+				  var startTime = contestStart - now;
+				  var endTime = contestEnd - now;
+
+				  var days = Math.floor(startTime / (1000 * 60 * 60 * 24));
+				  var hours = Math.floor((startTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				  var minutes = Math.floor((startTime % (1000 * 60 * 60)) / (1000 * 60));
+				  var seconds = Math.floor((startTime % (1000 * 60)) / 1000);
+
+				  var daysE = Math.floor(endTime / (1000 * 60 * 60 * 24));
+				  var hoursE = Math.floor((endTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				  var minutesE = Math.floor((endTime % (1000 * 60 * 60)) / (1000 * 60));
+				  var secondsE = Math.floor((endTime % (1000 * 60)) / 1000);
+					var timeLeftToStart = "";
+					if(days > 0){
+						timeLeftToStart +=  + days + " Days ";
+					}
+					if(hours > 0){
+						timeLeftToStart +=  + hours + " Hours ";
+					}
+					if(minutes > 0){
+						timeLeftToStart +=  + minutes + " Minutes ";
+					}
+					if(seconds > 0){
+						timeLeftToStart +=  + seconds + " Seconds ";
+					}
+					var timeLeftToEnd = "";
+					if(daysE > 0){
+						timeLeftToEnd +=  + daysE + " Days ";
+					}
+					if(hoursE > 0){
+						timeLeftToEnd +=  + hoursE + " Hours ";
+					}
+					if(minutesE > 0){
+						timeLeftToEnd +=  + minutesE + " Minutes ";
+					}
+					if(secondsE > 0){
+						timeLeftToEnd +=  + secondsE + " Seconds ";
+					}
+					document.getElementById(htmlId).innerHTML = "<b>Contest starts in:</b> <anm> " + timeLeftToStart + " </anm>";
+				  if (endTime < 0) {
+				    clearInterval(x);
+				    document.getElementById(htmlId).innerHTML = "<b>Contest Ended</b>";
+				  }
+				  if (startTime < 0 && endTime > 0) {
+				    document.getElementById(htmlId).innerHTML = "<anm>Ongoing Contest</anm> </br> <b>Ends in:</b> <anm> " +  timeLeftToEnd + " </anm>";
+				  }
+				}, 1000);
+			}
+		</script>
+	</head>
+	<body  onLoad="startTime();">
+		<header style="text-align: right; width:100%; color: #ff6600;">
+			<div id="DateDisplay" class="container"></div>
+			<div id="clockDisplay" class="container"></div>
+		</header>
+		<h1 class="heading">Upcoming Events</h1>
+		<div class="content">
+      <div  class="title">
+				<a href="https://codingcompetitions.withgoogle.com/codejam" target="_blank"><h4>Code Jam 2020 Round 1C</h4></a>
+      </div>
+      <div>
+      		<span class="span"><b>Date & Time:</b> Sat, May 02, 02:30pm</span><br/>
+      		<span class="span"><b>Duration:</b> 2Hrs 30mins </span><br/>
+      		<span id="CodeJam2020R1C" class="span tr"></span>
+      </div>
+		</div>
+		<div class="content">
+      <div  class="title">
+        <a href="https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge" target="_blank"><h4>30-Day LeetCoding Challenge</h4></a>
+      </div>
+      <div>
+      		<span class="span"><b>Date & Time:</b> Wed, Apr 01, 12:30pm</span><br/>
+      		<span class="span"><b>Duration:</b> 30 Days <span class="tr"><anm>(new problem daily at 12:30)</anm></span></span><br/>
+      		<span id="30DayLeetcodingChallenge" class="span tr"></span>
+      </div>
+		</div>
+		<div class="content">
+      <div  class="title">
+        <a href="https://www.hackerearth.com/challenges/competitive/april-circuits-20/" target="_blank"><h4>Hackerearth April Circuits '20</h4></a>
+      </div>
+      <div>
+      		<span class="span"><b>Date & Time:</b> Sat, Apr 18, 09:00pm</span><br/>
+      		<span class="span"><b>Duration:</b> 7 Days </span><br/>
+      		<span id="AprilCircuits20" class="span tr"></span>
+      </div>
+		</div>
+		<div class="content">
+      <div  class="title">
+				<a href="https://codingcompetitions.withgoogle.com/codejam" target="_blank"><h4>Code Jam 2020 Round 1B</h4></a>
+      </div>
+      <div>
+      		<span class="span"><b>Date & Time:</b> Sun, Apr 19, 09:30pm</span><br/>
+      		<span class="span"><b>Duration:</b> 2Hrs 30mins </span><br/>
+      		<span id="CodeJam2020R1B" class="span tr"></span>
+      </div>
+		</div>
+		<div class="content">
+      <div  class="title">
+        <a href="https://leetcode.com/contest/weekly-contest-185" target="_blank"><h4>Leetcode Weekly Contest 185</h4></a>
+      </div>
+      <div>
+      		<span class="span"><b>Date & Time:</b> Sun, Apr 19, 08:00 AM</span><br/>
+      		<span class="span"><b>Duration:</b> 1Hrs 30mins </span><br/>
+      		<span id="weekly-contest-185" class="span tr"></span>
+      </div>
+    </div>
+		<div class="content">
+      <div  class="title">
+				<a href="https://codingcompetitions.withgoogle.com/kickstart" target="_blank"><h4>Google KickStart 2020 Round B</h4></a>
+      </div>
+      <div>
+      		<span class="span"><b>Date & Time:</b> Sun, Apr 19, 04:30am</span><br/>
+      		<span class="span"><b>Duration:</b> 3Hrs </span><br/>
+      		<span id="Kickstart2020B" class="span tr"></span>
+      </div>
+		</div>
+		<div class="content">
+      <div  class="title">
+        <a href="https://leetcode.com/contest/biweekly-contest-24" target="_blank"><h4>Leetcode Biweekly  Contest 24</h4></a>
+      </div>
+      <div>
+      		<span class="span"><b>Date & Time:</b> Sat, Apr 18, 08:00 PM</span><br/>
+      		<span class="span"><b>Duration:</b> 1Hrs 30mins </span><br/>
+      		<span id="biweekly-contest-24" class="span tr"></span>
+      </div>
+    </div>
+		<div class="content">
+      <div  class="title">
+        <a href="https://www.codechef.com/APRIL20B" target="_blank"><h4>CodeChef April Challenge 2020</h4></a>
+      </div>
+      <div>
+      		<span class="span"><b>Date & Time:</b> Fri, Apr 03, 03:00pm</span><br/>
+      		<span class="span"><b>Duration:</b> 10 Days </span><br/>
+      		<span id="APRIL20B" class="span tr"></span>
+      </div>
+		</div>
+		<div class="content">
+      <div  class="title">
+				<a href="https://codingcompetitions.withgoogle.com/codejam" target="_blank"><h4>Code Jam 2020 Round 1A</h4></a>
+      </div>
+      <div>
+      		<span class="span"><b>Date & Time:</b> Sat, Apr 11, 06:30am</span><br/>
+      		<span class="span"><b>Duration:</b> 2Hrs 30mins </span><br/>
+      		<span id="CodeJam2020R1A" class="span tr"></span>
+      </div>
+		</div>
+		<div class="content">
+      <div  class="title">
+        <a href="https://leetcode.com/contest/weekly-contest-183" target="_blank"><h4>Leetcode Weekly Contest 183</h4></a>
+      </div>
+      <div>
+      		<span class="span"><b>Date & Time:</b> Sun, Apr 05, 08:00 AM</span><br/>
+      		<span class="span"><b>Duration:</b> 1Hrs 30mins </span><br/>
+      		<span id="weekly-contest-183" class="span tr"></span>
+      </div>
+    </div>
+		<div class="content">
+      <div  class="title">
+        <a href="https://codingcompetitions.withgoogle.com/codejam" target="_blank"><h4>Code Jam 2020 Qualification</h4></a>
+      </div>
+      <div>
+      		<span class="span"><b>Date & Time:</b> Sat, Apr 04, 04:30am</span><br/>
+      		<span class="span"><b>Duration:</b> 27 Hours </span><br/>
+      		<span id="CodeJam2020Q" class="span tr"></span>
+      </div>
+		</div>
+		<div class="content">
+      <div  class="title">
+        <a href="https://leetcode.com/contest/biweekly-contest-23" target="_blank"><h4>Leetcode Biweekly  Contest 23</h4></a>
+      </div>
+      <div>
+      		<span class="span"><b>Date & Time:</b> Sat, Apr 04, 08:00 PM</span><br/>
+      		<span class="span"><b>Duration:</b> 1Hrs 30mins </span><br/>
+      		<span id="biweekly-contest-23" class="span tr"></span>
+      </div>
+    </div>
+		<div class="content">
+      <div  class="title">
+        <a href="https://www.codechef.com/MARCH20B" target="_blank"><h4>CodeChef March Challenge 2020</h4></a>
+      </div>
+      <div>
+      		<span class="span"><b>Date & Time:</b> Fri, Mar 06, 03:00pm</span><br/>
+      		<span class="span"><b>Duration:</b> 10 Days </span><br/>
+      		<span id="MARCH20B" class="span tr"></span>
+      </div>
+		</div>
+	</body>
+</html>

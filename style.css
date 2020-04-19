@@ -1,0 +1,89 @@
+@font-face{
+  font-family:'Montserrat-Regular';
+  src:url(Montserrat-Regular.ttf) format('truetype');
+}
+
+@font-face{
+  font-family: 'Muli-Regular';
+  src:url(Muli-Regular.ttf) format('truetype');
+}
+
+html, body{
+  background-color: #212121;
+  font-family:'Montserrat-Regular';
+}
+
+header{
+  text-align: right;
+  width:100%;
+  color: #ff6600;
+}
+
+.heading{
+  color: #FF733B;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+}
+
+ .tr anm{
+    animation: rbgtext 1s ease infinite;
+ }
+
+.title a{
+  text-decoration: none;
+}
+.title a h4{
+  margin: 0px;
+  padding: 0.2em;
+  color: #FB732B ;
+  font-size: 30px;
+}
+.span {
+  color: #ffffff ;
+  font-size: 20px;
+  font-family:'Muli-Regular';
+}
+
+.content {
+  min-height: 150px;
+  width: 90%;
+  float: left;
+  background-color: #333333;
+  /* background-image: linear-gradient(62deg, #e4a0a0 0%, #a887ca 100%); */
+  padding: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+  border: 1px solid #ebeff6;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+ }
+
+ body::-webkit-scrollbar, .sidebar::-webkit-scrollbar {
+   width: .5em;
+ }
+
+ body::-webkit-scrollbar-track, .sidebar::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+   background: linear-gradient(-45deg, #100e17, #201c29);
+ }
+
+ body::-webkit-scrollbar-thumb, .sidebar::-webkit-scrollbar-thumb {
+   background-color: darkgrey;
+   background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+   outline: 1px solid slategrey;
+   border-radius: 60px;
+ }
+
+@keyframes rbgtext {
+  0% {
+    color: #FFE53B;
+  }
+  50% {
+    color: #FF2525;
+  }
+  100% {
+    color: #FFE53B;
+  }
+}
