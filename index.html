@@ -1,57 +1,68 @@
 <!--Author: Anmol Agrawal-->
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Next Events</title>
-		<link href="style.css" rel="stylesheet">
-		<script type="text/javascript" src="date_time.js"></script>
-		<script type="text/javascript" src="index.js"></script>
-		<script>
-			timeLeftCalculator("May 01, 2020 12:30:00", "June 01, 2020 12:30:00", "MayLeetcodingChallenge");
-			timeLeftCalculator("May 17, 2020 16:30:00", "May 17, 2020 19:30:00", "Kickstart2020C");
-			timeLeftCalculator("May 17, 2020 08:00:00", "May 17, 2020 09:30:00", "weekly-contest-189");
-		</script>
-	</head>
-	<body  onLoad="startTime();">
-		<header>
-			<div style="position: absolute; left: 30px; text-align:left; z-index:1;">
-				<a href="previous.html"><button class="btn" type="button" name="button">Previous Events</button></a>
-			</div>
-			<div  style="position: absolute; width: 95%; right: 100; text-align: right; color: #ff6600;">
-				<div id="DateDisplay"></div>
-				<div id="clockDisplay"></div>
-			</div>
-		</header>
-		<h1 class="heading">Upcoming Events</h1>
-		<div class="content">
-      <div  class="title">
-        <a href="https://leetcode.com/explore/featured/card/may-leetcoding-challenge/" target="_blank"><h4>May LeetCoding Challenge</h4></a>
-      </div>
-      <div>
-      		<span class="span"><b>Date & Time:</b> Fri, May 01, 12:30pm</span><br/>
-      		<span class="span"><b>Duration:</b> 31 Days <span class="tr"><anm>(new problem daily at 12:30)</anm></span></span><br/>
-      		<span id="MayLeetcodingChallenge" class="span tr"></span>
-      </div>
-		</div>
-		<div class="content">
-      <div  class="title">
-				<a href="https://codingcompetitions.withgoogle.com/kickstart" target="_blank"><h4>Google KickStart 2020 Round C</h4></a>
-      </div>
-      <div>
-      		<span class="span"><b>Date & Time:</b> Sun, May 19, 04:30PM</span><br/>
-      		<span class="span"><b>Duration:</b> 3Hrs </span><br/>
-      		<span id="Kickstart2020C" class="span tr"></span>
-      </div>
-		</div>
-		<div class="content">
-      <div  class="title">
-        <a href="https://leetcode.com/contest/weekly-contest-189" target="_blank"><h4>Leetcode Weekly Contest 189</h4></a>
-      </div>
-      <div>
-      		<span class="span"><b>Date & Time:</b> Sun, May 17, 08:00 AM</span><br/>
-      		<span class="span"><b>Duration:</b> 1Hrs 30mins </span><br/>
-      		<span id="weekly-contest-189" class="span tr"></span>
-      </div>
+
+<head>
+  <title>Next Events</title>
+  <link href="style.css" rel="stylesheet">
+  <script type="text/javascript" src="date_time.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <script>
+    timeLeftCalculator("May 01, 2020 12:30:00", "June 01, 2020 12:30:00", "MayLeetcodingChallenge");
+    timeLeftCalculator("May 17, 2020 16:30:00", "May 17, 2020 19:30:00", "Kickstart2020C");
+    timeLeftCalculator("May 17, 2020 08:00:00", "May 17, 2020 09:30:00", "weekly-contest-189");
+  </script>
+</head>
+
+<body onLoad="startTime();">
+  <header>
+    <div style="position: absolute; left: 30px; text-align:left; z-index:1;">
+      <a href="previous.html"><button class="btn" type="button" name="button">Previous Events</button></a>
     </div>
-	</body>
+    <div style="position: absolute; width: 95%; right: 100; text-align: right; color: #ff6600;">
+      <div id="DateDisplay"></div>
+      <div id="clockDisplay"></div>
+    </div>
+  </header>
+  <h1 class="heading">Upcoming Events</h1>
+  <div class="content">
+    <div class="title">
+      <a href="https://leetcode.com/explore/featured/card/may-leetcoding-challenge/" target="_blank">
+        <h4>May LeetCoding Challenge</h4>
+      </a>
+    </div>
+    <div>
+      <span class="span"><b>Date & Time:</b> Fri, May 01, 12:30pm</span><br />
+      <span class="span"><b>Duration:</b> 31 Days <span class="tr">
+          <anm>(new problem daily at 12:30)</anm>
+        </span></span><br />
+      <span id="MayLeetcodingChallenge" class="span tr"></span>
+    </div>
+  </div>
+  <div class="content">
+    <div class="title">
+      <a href="https://codingcompetitions.withgoogle.com/kickstart" target="_blank">
+        <h4>Google KickStart 2020 Round C</h4>
+      </a>
+    </div>
+    <div>
+      <span class="span"><b>Date & Time:</b> Sun, May 19, 04:30PM</span><br />
+      <span class="span"><b>Duration:</b> 3Hrs </span><br />
+      <span id="Kickstart2020C" class="span tr"></span>
+    </div>
+  </div>
+  <div class="content">
+    <div class="title">
+      <a href="https://leetcode.com/contest/weekly-contest-189" target="_blank">
+        <h4>Leetcode Weekly Contest 189</h4>
+      </a>
+    </div>
+    <div>
+      <span class="span"><b>Date & Time:</b> Sun, May 17, 08:00 AM</span><br />
+      <span class="span"><b>Duration:</b> 1Hrs 30mins </span><br />
+      <span id="weekly-contest-189" class="span tr"></span>
+    </div>
+  </div>
+</body>
+
 </html>
