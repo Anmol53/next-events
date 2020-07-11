@@ -14,6 +14,25 @@
     timeLeftCalculator("Jul 03, 2020 15:00:00", "Jul 13, 2020 15:00:00", "JULY20B");
     timeLeftCalculator("Jul 24, 2020 22:30:00", "Jul 27, 2020 22:30:00", "FBHackercup2020QR");
     timeLeftCalculator("Jul 01, 2020 12:30:00", "Aug 01, 2020 12:30:00", "JulyLeetcodingChallenge");
+    document.onkeydown = function(e) {
+      if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+        return false;
+      }
+      else if (e.ctrlKey && e.shiftKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 73 || e.keyCode === 105)) {
+        return false;
+      }
+      else {
+        return true;
+      }
+    };
+    $(document).keypress("u", function(e) {
+      if(e.ctrlKey){
+        return false;
+      }
+      else{
+        return true;
+      }
+    });
   </script>
 </head>
 
