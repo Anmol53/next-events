@@ -12,12 +12,12 @@
   <li> sum of the above two integers</li>
 </ul>
 <p><strong>Sample Input</strong></p>
-```html
+```
     a = 2
     b = 3
 ```
 <p><strong>Sample Output</strong></p>
-```html
+```
     5
 ```
 <p><strong>Explanation</strong></p>
