@@ -1,3 +1,11 @@
+<head>
+  <style>
+    code{
+      display:block;
+      padding:20px;
+    }
+  </style>
+</head>
 <h3>Solve Me First</h3>
 <p>Complete the function <em>solveMeFirst</em> to compute the sum of two integers.</p>
 <p><strong>Function prototype:</strong></p>
@@ -16,13 +24,13 @@
 <br>
 <p><strong>Sample Input</strong></p>
 <br>
-<code style = "display:block; padding:20px;">
+<code>
   a = 2
   b = 3
 </code>
 <p><strong>Sample Output</strong></p>
 <br>
-<code style = "display:block; padding:20px;">
+<code>
   5
 </code>
 <p><strong>Explanation</strong></p>
