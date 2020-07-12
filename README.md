@@ -10,7 +10,8 @@
 <p><strong>Return values</strong></p>
 <ul>
   <li> sum of the above two integers</li>
-<code>
+<p><strong>Sample Input</strong></p>
+ <code>
   a = 2
   b = 3
 </code>
