@@ -16,18 +16,14 @@
 <br>
 <p><strong>Sample Input</strong></p>
 <br>
-<div style = "display:block;padding:20px;" >
-  <code>
+<div style = "display:block;padding:20px;font-family: Consolas,"courier new";color: crimson;background-color: #f1f1f1;font-size: 105%;" >
     a = 2
     b = 3
-  </code>
 </div>
 <p><strong>Sample Output</strong></p>
 <br>
-<div style = "display:block;padding:20px;" >
-  <code>
+<div style = "display:block;padding:20px;font-family: Consolas,"courier new";color: crimson;background-color: #f1f1f1;font-size: 105%;" >
     5
-  </code>
 </div>
 <p><strong>Explanation</strong></p>
 <br>
