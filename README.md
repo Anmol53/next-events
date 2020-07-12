@@ -20,6 +20,6 @@
 <p>The sum of the two integers <strong> a </strong> and <strong> b </strong> is computed as: <strong> 2 + 3 = 5 </strong>
 
 
-<div class="hackdown-content"><svg style="display: none;"><defs id="MathJax_SVG_glyphs"></defs></svg><pre><code>a = 2
+<svg style="display: none;"><defs id="MathJax_SVG_glyphs"></defs></svg><pre><code>a = 2
 b = 3
-</code></pre></div>
+</code></pre>
