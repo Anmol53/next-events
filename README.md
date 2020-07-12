@@ -13,7 +13,7 @@
 </ul>
 <p><strong>Sample Input</strong></p>
 <pre><code> a = 2
-b = 3</code></pre>
+ b = 3</code></pre>
 <p><strong>Sample Output</strong></p>
 <pre><code> 5</code></pre>
 <p><strong>Explanation</strong></p>
