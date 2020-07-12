@@ -16,17 +16,15 @@
 <br>
 <p><strong>Sample Input</strong></p>
 <br>
-<code style="display:block;">
+<code>
   a = 2
   b = 3
 </code>
-<br>
 <p><strong>Sample Output</strong></p>
 <br>
-<code style="display:block;">
+<code>
   5
 </code>
-<br>
 <p><strong>Explanation</strong></p>
 <br>
 <p>The sum of the two integers <strong> a </strong> and <strong> b </strong> is computed as: <strong> 2 + 3 = 5 </strong>
