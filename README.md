@@ -10,13 +10,15 @@
 <p><strong>Return values</strong></p>
 <ul>
   <li> sum of the above two integers</li>
+</ul>
+<br>
 <p><strong>Sample Input</strong></p>
- <code>
+<code style="width:100%">
   a = 2
   b = 3
 </code>
 <p><strong>Sample Output</strong></p>
-<code>
+<code style="width:100%">
   5
 </code>
 <p><strong>Explanation</strong></p>
