@@ -80,6 +80,9 @@ header{
    box-shadow: 1px 1px 10px 1px #ffc42a;
  }
 
+.colo-change {
+  animation: pulse 5s infinite, expand 2s;
+}
 
  body::-webkit-scrollbar, .sidebar::-webkit-scrollbar {
    width: .5em;
@@ -96,6 +99,19 @@ header{
    outline: 1px solid slategrey;
    border-radius: 60px;
  }
+
+
+@keyframes pulse {
+  0% {
+    color: #61f15e;
+  }
+  50% {
+    color: #07d8a4;
+  }
+  100% {
+    color: #23d6f1;
+  }
+}
 
 @keyframes rbgtext {
   0% {
