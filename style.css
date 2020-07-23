@@ -83,17 +83,39 @@ header{
 .text-center {
   text-align: center !important;
 }
+
 .mp-0 {
   margin: 0 !important;
   padding: 0 !important;
 }
-.footer-copyright {
+
+.p-2 {
+  padding: 0.5rem !important;
+}
+/* 
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+} */
+footer.page-footer {
+    bottom: 0;
+    color: #fff
+}
+
+footer.page-footer .container-fluid {
+    width: auto
+}
+
+footer.page-footer .footer-copyright {
     overflow: hidden;
     color: rgba(255, 255, 255, 0.6);
     background-color: rgba(0, 0, 0, 0.2)
 }
 
-.colo-change {
+footer.page-footer a {
+    color: #fff
+}.colo-change {
   animation: pulse 5s infinite, expand 2s;
 }
 
