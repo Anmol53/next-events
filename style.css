@@ -80,6 +80,19 @@ header{
    box-shadow: 1px 1px 10px 1px #ffc42a;
  }
 
+.text-center {
+  text-align: center !important;
+}
+.mp-0 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.footer-copyright {
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
 .colo-change {
   animation: pulse 5s infinite, expand 2s;
 }
