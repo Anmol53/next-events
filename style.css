@@ -93,33 +93,18 @@ header{
   padding: 0.5rem !important;
 }
 
-.col-md-12 {
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  max-width: 100%;
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
 footer.page-footer {
-    bottom: 0;
-    color: #fff
-}
-
-footer.page-footer .container-fluid {
-    width: auto
+  bottom: 0;
+  display : block;
+  margin: 0 !important;
+  padding: 0 !important;
+  position : absolute;
 }
 
 footer.page-footer .footer-copyright {
-    overflow: hidden;
-    color: rgba(255, 255, 255, 0.6);
-    background-color: rgba(0, 0, 0, 0.2)
-}
-
-footer.page-footer a {
-    color: #fff
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(0, 0, 0, 0.2)
 }
 
 .colo-change {
