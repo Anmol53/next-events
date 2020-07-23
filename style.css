@@ -92,30 +92,24 @@ header{
 .p-2 {
   padding: 0.5rem !important;
 }
-/* 
-.clearfix::after {
-  display: block;
-  clear: both;
-  content: "";
-} */
-footer.page-footer {
-    bottom: 0;
-    color: #fff
+
+.col-md-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-footer.page-footer .container-fluid {
-    width: auto
+.footer-copyright {
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(0, 0, 0, 0.2)
 }
 
-footer.page-footer .footer-copyright {
-    overflow: hidden;
-    color: rgba(255, 255, 255, 0.6);
-    background-color: rgba(0, 0, 0, 0.2)
-}
-
-footer.page-footer a {
-    color: #fff
-}.colo-change {
+.colo-change {
   animation: pulse 5s infinite, expand 2s;
 }
 
